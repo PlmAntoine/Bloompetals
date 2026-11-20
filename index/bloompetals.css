@@ -1,0 +1,96 @@
+.h1{
+    text-align: center;
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+    background-color: #FFC5D3;
+    margin: 0px
+}
+
+.conteneur{
+    display: flex;
+    gap: 20px;
+    border: 2px solid #f4a6b8;
+    padding: 10px;
+    background-color: #f4a6b8
+}
+
+.h2{
+    text-decoration: underline;
+    text-align: center;
+}
+
+.p1{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+
+.fleur{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    padding: 15px;
+    background-color: #f4a6b8;
+}
+.fleur img{
+    width: 200px;
+    height: 145;
+    padding: 10px;
+    object-fit: cover;
+}
+
+.mes-blocs {
+    display: flex;              
+    justify-content: center;    
+    gap: 30px;                  
+    max-width: 900px;           
+    margin: 30px auto;
+    padding: 15px
+             
+}
+
+.bloc-texte {
+    flex: 1;                    
+    text-align: center;
+    background-color: aliceblue;
+    border: 2px solid black;     
+}
+
+.bloc-texte h3 {
+    margin-bottom: 10px; 
+}
+
+
+
+
+@media (max-width: 768px) {
+    /* 1. Le menu reste aligné horizontalement comme sur Entreprise */
+    .conteneur {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+
+    .mes-blocs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fleur {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .fleur img, .bloc-texte, .p1 {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}

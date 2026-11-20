@@ -1,0 +1,30 @@
+.conteneur{
+    display: flex;
+    gap: 20px;
+    border: 2px solid #f4a6b8;
+    padding: 10px;
+    background-color: #f4a6b8
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+    background-color: #FFC5D3;
+    margin: 0px
+}
+
+
+
+@media (max-width: 768px) {
+
+    .conteneur {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    input[type="texte"], input[type="text"], select {
+        max-width: 85%;
+        box-sizing: border-box;
+    }
+}
